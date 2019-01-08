@@ -9,8 +9,8 @@ module.exports = {
 	dev: {
 		browserSync: {
 			live: true,
-			proxyURL: 'localhost',
-			bypassPort: '8181'
+			proxyURL: 'meiji.local',
+			bypassPort: '8080'
 		},
 		browserslist: [ // See https://github.com/browserslist/browserslist
 			'> 1%',

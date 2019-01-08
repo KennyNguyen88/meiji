@@ -86,8 +86,7 @@ const server = browserSync.create();
 function serve(done) {
 	if (config.dev.browserSync.live) {
 		server.init({
-			proxy: config.dev.browserSync.proxyURL,
-			port: config.dev.browserSync.bypassPort,
+			proxy: `${config.dev.browserSync.proxyURL}:${config.dev.browserSync.bypassPort}`,
 			liveReload: true
 		});
 	}
