@@ -22,22 +22,22 @@
 	<?php endif; ?>
 
 	<?php wp_head(); ?>
+    <?php wp_print_styles( array( 'wprig-app-style' ) );?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class();?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wprig' ); ?></a>
-    <?php echo get_template_directory_uri()."/images/temp/logo01.png"; ?>
     <header id="header" role="banner">
         <div id="hd_outer">
             <h1 id="hd_logo"><a href="#"><img src="<?php echo get_template_directory_uri().'/images/temp/'?>logo01.png" width="387" height="90" alt="ほほえみクラブ ママと家族の育児応援サイト"></a></h1>
 
             <div id="hd_inner">
                 <p><a href="http://www.meiji.co.jp/" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/temp/'?>logo02.png" width="65" height="26" alt="Meiji"></a></p>
-                <div class="clearfix">
+                <div >
 
                     <ul id="hd_links">
-                        <li class="last"><a href="https://line.me/R/ti/p/%40erx4059x" target="_blank">友だち追加</a></li>
+                        <li class="last"><a href="https://line.me/R/ti/p/%40erx4059x" target="_blank">Add Friends</a></li>
                     </ul>
                     </div>
                 </div>
