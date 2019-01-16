@@ -1,0 +1,49 @@
+#footer{
+  height: 70px;
+  margin: 0 auto;
+  line-height: 11px;
+  background-color: #FFFFFF;
+  border-top: 2px solid #F00;
+  .copyright{
+    width: 180px;
+    height: 25px;
+  }
+}
+
+#footer-inner{
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  .right-section{
+    display: flex;
+    ul{
+      display: flex;
+      margin: 0;
+      padding: 18px 0 0 0;
+      list-style: none;
+      li{
+        padding-left: 12px;
+        a{
+          color: #4e4e4e;
+          text-decoration: none;
+
+          font-size: 10px;
+
+        }
+      }
+      &.utility-link{
+        a{
+          background: url('#{$path--image}/ft_utility_listitem.gif');
+          padding-left: 8px;
+        }
+      }
+      &.company-link{
+        a{
+          background: url('#{$path--image}/ft_company_listitem.gif') no-repeat;
+          padding-left: 14px;
+        }
+      }
+    }
+  }
+}
