@@ -141,9 +141,6 @@
           flex-wrap: wrap;
           &:hover{
             background: #FFFFFF;
-            a{
-              color: #3bc1f8;
-            }
           }
           &:first-child{
             padding-left: 0;
@@ -155,6 +152,9 @@
             padding-top: 15px;
             padding-bottom: 15px;
             color: #4e4e4e !important;
+            &:hover{
+              color: #3bc1f8;
+            }
           }
         }
       }
