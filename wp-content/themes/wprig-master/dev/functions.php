@@ -392,3 +392,8 @@ require get_template_directory() . '/inc/customizer.php';
  * @link https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/
  */
 require get_template_directory() . '/pluggable/lazyload/lazyload.php';
+
+function insert_jquery(){
+    wp_enqueue_script('jquery', false, array(), false, false);
+}
+add_filter('wp_enqueue_scripts','insert_jquery',1);
