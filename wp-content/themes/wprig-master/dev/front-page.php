@@ -10,21 +10,26 @@ wp_print_styles( array( 'wprig-content', 'wprig-front-page' ) ); // Note: If thi
                     <?php
                     while ( have_posts() ) : the_post();
 
-                        the_content();
+                        the_content(); //carousel
 
                     endwhile;
                     ?>
                 </div>
                 <section id="premama" class="landing__section">
+                    <?php
+                        $tag_premama1 = get_term_by('slug','premama1','post_tag');
+                        $tag_premama1_link = get_tag_link($tag_premama1->term_id);
+                        $tag_premama1_name = $tag_premama1->name;
+                    ?>
                     <header class="h2_basic01">
-                        <h2>プレママ</h2>
+                        <h2>Premama</h2>
                     </header>
                     <ul class="clearfix">
                         <li class="first">
                             <dl>
                                 <dt>
                                     <img src="<?php echo get_template_directory_uri().'/images/temp/'?>img_premama01.png" />
-                                    <a href="/baby/club/tag/premama1/index.html">妊娠初期<span
+                                    <a href="<?php echo $tag_premama1_link; ?>"><?php echo $tag_premama1_name;?><span
                                                 class="fa fa-caret-right"></span></a></dt>
                                 <dd>
                                     <ul class="clearfix">
