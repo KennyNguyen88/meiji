@@ -111,10 +111,11 @@
         display: block;
         padding-top: 15px;
         padding-bottom: 15px;
-        padding-left: 25px;
+        padding-left: 0;
         text-align: center;
         color: #343434;
         text-decoration: none;
+        text-transform: capitalize;
         line-height: 1.5;
       }
       ul{
@@ -152,6 +153,7 @@
             padding-top: 15px;
             padding-bottom: 15px;
             color: #4e4e4e !important;
+            text-transform: capitalize;
             &:hover{
               color: #3bc1f8;
             }
