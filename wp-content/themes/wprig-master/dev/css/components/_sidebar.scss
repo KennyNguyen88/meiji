@@ -43,7 +43,7 @@
           display: flex;
           flex-flow: row;
           justify-content: space-between;
-
+          text-decoration: none;
         }
         .ph01{
           width: 120px;
@@ -54,6 +54,66 @@
           width: 180px;
           margin: 0 0 10px 0;
           padding: 0;
+          p{
+            margin: 0 0 -4px 0;
+            padding: 0;
+            line-height: 1.5;
+          }
+          .cat_deals01{
+            background: #add8ae;
+            color: #fff;
+            font-size: 63%;
+            padding: 1px 3px 1px;
+            vertical-align: top;
+          }
+          .cat_study01{
+            background: #b0e1ff;
+            color: #fff;
+            font-size: 63%;
+            padding: 1px 3px 1px;
+            vertical-align: top;
+          }
+          .cat_play01{
+            background: #ffc0ad;
+            color: #fff;
+            font-size: 63%;
+            padding: 1px 3px 1px;
+            vertical-align: top;
+          }
+          .cat_ask01{
+            background: #f8e08c;
+            color: #fff;
+            font-size: 63%;
+            padding: 1px 3px 1px;
+            vertical-align: top;
+          }
+          .cat_eat01{
+            background: #ffb66e;
+            color: #fff;
+            font-size: 63%;
+            padding: 1px 3px 1px;
+            vertical-align: top;
+          }
+          dl{
+            margin: 0;
+            padding: 0;
+            dt{
+              color: #f74999;
+              font-weight: bold;
+              padding: 0 0 5px 0;
+              line-height: 1.4;
+              text-decoration: underline;
+              margin: 0;
+            }
+            dd{
+              font-size: 66%;
+              margin: 0;
+              padding: 0;
+              line-height: 1.5;
+              color: #343434;
+            }
+          }
+
         }
       }
 
