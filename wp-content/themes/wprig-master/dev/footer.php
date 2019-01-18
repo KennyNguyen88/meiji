@@ -14,7 +14,7 @@
     <div class="ft_link01">
         <section class="ft_inner01">
             <header class="h2_basic01">
-                <h2>明治製品のご紹介</h2>
+                <h2>Meiji products introduction</h2>
             </header>
             <div class="flex-container">
                 <div class="hohoemi01">
@@ -45,7 +45,7 @@
     <div class="ft_link02">
         <section class="ft_inner01">
             <header class="h2_basic01">
-                <h2><span class="fa fa-link"></span>関連コンテンツ</h2>
+                <h2><span class="fa fa-link"></span>Related content</h2>
             </header>
             <div class="relation01">
                 <ul>

@@ -401,7 +401,7 @@ function insert_jquery(){
 }
 add_filter('wp_enqueue_scripts','insert_jquery',1);
 
-function frontPage_getTagInfo($slug, $tag_arr){
+function filterTagBySlug($slug, $tag_arr){
     $tagInfo_arr = array();
     foreach ($tag_arr as $tag){
         if ($tag->slug == $slug){
@@ -411,3 +411,15 @@ function frontPage_getTagInfo($slug, $tag_arr){
     }
     return $tagInfo_arr;
 }
+
+function filterCateGoryBySlug($slug, $cate_arr){
+    $cateInfo_arr = array();
+    foreach ($cate_arr as $cate){
+        if ($cate->slug == $slug){
+            $cateInfo_arr["name"] = $cate->name;
+            $cateInfo_arr["link"] = get_category_link( $cate->term_id );
+        }
+    }
+    return $cateInfo_arr;
+}
+
