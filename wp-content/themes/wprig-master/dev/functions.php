@@ -393,7 +393,33 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/pluggable/lazyload/lazyload.php';
 
+/**
+ * Insert Jquery into <head>
+ */
 function insert_jquery(){
     wp_enqueue_script('jquery', false, array(), false, false);
 }
 add_filter('wp_enqueue_scripts','insert_jquery',1);
+
+function filterTagBySlug($slug, $tag_arr){
+    $tagInfo_arr = array();
+    foreach ($tag_arr as $tag){
+        if ($tag->slug == $slug){
+            $tagInfo_arr["name"] = $tag->name;
+            $tagInfo_arr["link"] = get_tag_link( $tag->term_id );
+        }
+    }
+    return $tagInfo_arr;
+}
+
+function filterCateGoryBySlug($slug, $cate_arr){
+    $cateInfo_arr = array();
+    foreach ($cate_arr as $cate){
+        if ($cate->slug == $slug){
+            $cateInfo_arr["name"] = $cate->name;
+            $cateInfo_arr["link"] = get_category_link( $cate->term_id );
+        }
+    }
+    return $cateInfo_arr;
+}
+
