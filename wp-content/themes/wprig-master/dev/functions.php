@@ -423,3 +423,10 @@ function filterCateGoryBySlug($slug, $cate_arr){
     return $cateInfo_arr;
 }
 
+function mytheme_enqueue_front_page_scripts() {
+    if( is_front_page() )
+    {
+        wp_enqueue_script( 'popupOnLoan',get_theme_file_uri( '/js/popupOnLoad.js' ), array( 'jquery' ), null, true );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_front_page_scripts' );

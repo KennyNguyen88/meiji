@@ -4,6 +4,15 @@ wp_print_styles( array( 'wprig-content', 'wprig-front-page' ) ); // Note: If thi
 $tag_arr = get_tags(array('hide_empty' => false));
 $cate_arr = get_categories(array('hide_empty' => false));
 ?>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
     <div id="wrapper">
         <div id="contents">
             <main id="main" role="main">
